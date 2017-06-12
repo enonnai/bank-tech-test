@@ -21,4 +21,7 @@ class Account
     @balance
   end
 
+  def print_account_statement
+    @account_statement.print
+  end
 end

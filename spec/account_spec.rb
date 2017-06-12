@@ -1,7 +1,7 @@
 require 'account'
 
 describe Account do
-  subject(:account) {described_class.new}
+  subject(:account) { described_class.new }
 
   context "New account" do
     describe "#initialize" do
@@ -18,17 +18,24 @@ describe Account do
 
     describe "balance check" do
       it "checks that balance is updated" do
-        expect(subject.deposit(100)).to eq 100
+        subject.deposit(100)
         expect(subject.balance).to eq 100
       end
     end
 
     describe "#withdrawal" do
       it "withdraws an amount" do
-        expect(subject.deposit(100)).to eq 100
-        expect(subject.withdrawal(50)).to eq 50
+        subject.deposit(100)
+        expect(subject.withdrawal(55)).to eq 45
+      end
+    end
+
+    describe "#print_account_statement" do
+      it "prints an account's statement" do
+        subject.deposit(100)
+        subject.withdrawal(55)
+        expect(subject.print_account_statement).to eq(nil)
       end
     end
   end
-
 end

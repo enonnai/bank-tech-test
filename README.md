@@ -8,7 +8,7 @@
 * [RSpec Tests](#RSpec)
 * [Usage](#Usage)
 
-## Challenege Specs:
+## Challenge Specs:
 
 ### Requirements
 

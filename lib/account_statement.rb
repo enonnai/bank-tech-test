@@ -24,10 +24,11 @@ class AccountStatement
 
   def print
     puts"   date    || credit || debit || balance "
-    i = 0
+    i = -1
     while i < @date.length do
       puts "#{@date[i]}" + " || " + "#{@credit[i]}" + " || " + "#{@debit[i]}" + " || " + "#{@balance[i]}"
-      i += 1
+      break if i == - (@date.length)
+      i += -1
     end
   end
 

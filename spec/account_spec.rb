@@ -22,6 +22,13 @@ describe Account do
         expect(subject.balance).to eq 100
       end
     end
+
+    describe "#withdrawal" do
+      it "withdraws an amount" do
+        expect(subject.deposit(100)).to eq 100
+        expect(subject.withdrawal(50)).to eq 50
+      end
+    end
   end
 
 end

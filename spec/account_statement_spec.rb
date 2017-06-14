@@ -17,7 +17,7 @@ describe AccountStatement do
         subject.credit_transaction(100, 100)
         expect(subject.credit).to eq ["100.00"]
         expect(subject.balance).to eq ["100.00"]
-        expect(subject.date).to eq ["12/06/2017"]
+        expect(subject.date).to eq ["#{Time.now.strftime("%d/%m/%Y")}"]
       end
     end
 
@@ -27,7 +27,7 @@ describe AccountStatement do
         subject.debit_transaction(55, 45)
         expect(subject.debit.last).to eq "55.00"
         expect(subject.balance.last).to eq "45.00"
-        expect(subject.date.last).to eq "12/06/2017"
+        expect(subject.date.last).to eq "#{Time.now.strftime("%d/%m/%Y")}"
       end
     end
   end

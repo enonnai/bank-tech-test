@@ -34,7 +34,7 @@ describe Account do
       it "prints an account's statement" do
         subject.deposit(100)
         subject.withdrawal(55)
-        expect(subject.print_account_statement).to eq(nil)
+        expect { subject.print_account_statement }.to output.to_stdout
       end
     end
   end

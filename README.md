@@ -47,7 +47,7 @@ $ rspec
 ```
 
 ## <a name="Usage">Usage</a>
-irb/pry
+* Run the code with irb/pry and use the commands belows to create an account, deposit, withdraw and print your account statement:
 ```
 $ require "./lib/account.rb"
 $ account = Account.new

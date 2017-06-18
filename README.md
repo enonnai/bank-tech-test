@@ -1,14 +1,17 @@
 # Bank Tech Test
 
-#### Technologies used: Ruby, RSpec.
-
 ## Contents
-
+* [About](#About)
+* [Challenge Specs](#ChallengeSpecs)
 * [Installation](#Installation)
 * [RSpec Tests](#RSpec)
 * [Usage](#Usage)
 
-## Challenge Specs:
+## <a name="About">About</a>:
+
+I worked on this tech test during a day. Technologies used: Ruby, RSpec.
+
+## <a name="ChallengeSpecs">Challenge Specs</a>:
 
 ### Requirements
 
@@ -47,7 +50,7 @@ $ rspec
 ```
 
 ## <a name="Usage">Usage</a>
-* Run the code with irb/pry and use the commands belows to create an account, deposit, withdraw and print your account statement:
+* Run the code with **irb/pry** and use the commands belows to create an account, deposit, withdraw and print your account statement:
 ```
 $ require "./lib/account.rb"
 $ account = Account.new
